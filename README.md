@@ -1,3 +1,6 @@
+### npm install
+install dependencies
+***
 ### npm start 
 development server
 ***
