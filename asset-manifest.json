@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/au-ru-contest/static/css/main.9f40d98b.chunk.css",
+    "main.js": "/au-ru-contest/static/js/main.7a2ffc5c.chunk.js",
+    "main.js.map": "/au-ru-contest/static/js/main.7a2ffc5c.chunk.js.map",
+    "runtime-main.js": "/au-ru-contest/static/js/runtime-main.66b37e94.js",
+    "runtime-main.js.map": "/au-ru-contest/static/js/runtime-main.66b37e94.js.map",
+    "static/js/2.9de42c0d.chunk.js": "/au-ru-contest/static/js/2.9de42c0d.chunk.js",
+    "static/js/2.9de42c0d.chunk.js.map": "/au-ru-contest/static/js/2.9de42c0d.chunk.js.map",
+    "index.html": "/au-ru-contest/index.html",
+    "precache-manifest.37b2297bc62876da3886ae3ecc0bf4fa.js": "/au-ru-contest/precache-manifest.37b2297bc62876da3886ae3ecc0bf4fa.js",
+    "service-worker.js": "/au-ru-contest/service-worker.js",
+    "static/css/main.9f40d98b.chunk.css.map": "/au-ru-contest/static/css/main.9f40d98b.chunk.css.map",
+    "static/js/2.9de42c0d.chunk.js.LICENSE.txt": "/au-ru-contest/static/js/2.9de42c0d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66b37e94.js",
+    "static/js/2.9de42c0d.chunk.js",
+    "static/css/main.9f40d98b.chunk.css",
+    "static/js/main.7a2ffc5c.chunk.js"
+  ]
+}
