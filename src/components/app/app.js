@@ -17,7 +17,7 @@ const App = () => {
 
     setTimeout(() => {
       setIsLoading(false)
-      console.log(result)
+      console.log(JSON.stringify(result))
     }, 3000)
     
     return result
@@ -30,9 +30,6 @@ const App = () => {
     </div>
   )
 }
-
-
-
 
 
 export default App
