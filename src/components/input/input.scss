@@ -1,0 +1,60 @@
+.sing-in-form_input {
+  
+  width: 335px;
+  height: 31px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #999999;
+  height: 31px;
+
+  color: #404040;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-size: 16px;
+  outline: none;
+
+  &__red {
+    border: 1px solid #FF0000;
+  }
+
+  &__anchor {
+    position: relative;
+    max-width: 333px;
+  }
+
+  &_root {
+    margin: 0 0 16px 0;
+    max-width: 333px;
+  }
+
+}
+
+.input_eye {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  opacity: .2;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.sing-in-form_input_error {
+  font-size: 12px;
+  line-height: 20px;
+  color: #FF0000;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .sing-in-form_input {
+    width: 250px;
+  }
+}
