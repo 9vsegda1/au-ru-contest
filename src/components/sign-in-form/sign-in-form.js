@@ -21,13 +21,13 @@ const SignInForm = ({changeItem, city, data,
   submitHandler,
   isLoading}) => {
     
-  const {emailValid, passwordValid, passwordRepeatValid, formErrors} = validation
+  const {emailValid, passwordValid, passwordRepeatValid, formErrors, firstView} = validation
 
   const [date, setDate] = useState('15 мая 2012 в 14:55:17')
 
   const passwordInput = 
     <InputWithEye 
-      isOk={passwordValid} 
+      isOk={passwordValid || firstView} 
       notOkMessage={formErrors.password}
       name="password" 
       value={password} 
@@ -36,7 +36,7 @@ const SignInForm = ({changeItem, city, data,
 
   const repeatPasswordInput = 
     <InputWithEye 
-      isOk={passwordRepeatValid} 
+      isOk={passwordRepeatValid || firstView} 
       notOkMessage={formErrors.passwordRepeat}
       name="passwordRepeat" 
       value={repeatPassword} 
@@ -45,7 +45,7 @@ const SignInForm = ({changeItem, city, data,
   
   const emailInput = 
     <Input 
-      isOk={emailValid} 
+      isOk={emailValid || firstView} 
       notOkMessage={formErrors.email}
       name="email" 
       value={email} 

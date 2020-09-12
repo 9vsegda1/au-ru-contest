@@ -12,14 +12,20 @@ const withValidation = (View) => {
       emailValid: false,
       passwordValid: false,
       passwordRepeatValid: false,
-      formValid: false
+      formValid: false,
+      firstView: true
     }
 
     handleUserInput = (e) => {
-      const name = e.target.name;
-      const value = e.target.value;
+      const name = e.target.name
+      const value = e.target.value
       this.setState({[name]: value}, 
-        () => { this.validateField(name, value) });
+        () => { this.validateField(name, value) })
+      
+      if (this.state.firstView)
+      this.setState({
+        firstView: false
+      })
     }
 
     checkboxToggle = (e) => {
@@ -31,8 +37,6 @@ const withValidation = (View) => {
     }
 
     onSubmit = () => {
-      console.log('validator submit log')
-      
       
       const {email, password, subscribe} = this.state
 
@@ -89,9 +93,9 @@ const withValidation = (View) => {
     render() {
 
       const {password, passwordRepeat, email, subscribe} = this.state
-      const {emailValid, passwordValid, passwordRepeatValid, formErrors, formValid} = this.state
+      const {emailValid, passwordValid, passwordRepeatValid, formErrors, formValid, firstView} = this.state
       const validation = {
-        emailValid, passwordValid, passwordRepeatValid, formErrors
+        emailValid, passwordValid, passwordRepeatValid, formErrors, firstView
       }
       
       return (
