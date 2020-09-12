@@ -25,3 +25,11 @@
   }
 }
 
+@media (max-width: 768px) {
+  .button_container{
+    flex-direction: column;
+    .button_time{
+      margin-top: 20px;
+    }
+  }
+}

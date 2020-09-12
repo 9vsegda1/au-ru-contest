@@ -4,6 +4,13 @@
   padding: 3px 0;
 }
 
+@media (max-width: 768px) {
+  .checkbox_label{
+    white-space: unset;
+    
+  }
+}
+
 .custom-checkbox {
   position: absolute;
   z-index: -1;
